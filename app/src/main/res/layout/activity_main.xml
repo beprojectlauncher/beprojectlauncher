@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id = "@+id/activity_main"
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:orientation = "vertical"
+    android:paddingBottom = "@dimen/activity_vertical_margin"
+    android:paddingLeft = "0dp"
+    android:paddingRight = "0dp"
+    android:paddingTop = "@dimen/activity_vertical_margin"
+    tools:context = "com.saravagi.piyush.modieuslauncher.MainActivity">
+
+    <SearchView
+        android:id = "@+id/searchView"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_centerHorizontal = "true"
+        android:iconifiedByDefault = "false"
+        android:queryHint = "Search apps.." />
+
+    <GridView
+        android:id = "@+id/gridview_recommended_apps"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:numColumns = "4"
+        android:scrollbarAlwaysDrawVerticalTrack = "true"
+        />
+
+    <TextView
+        android:layout_width = "match_parent"
+        android:layout_height = "20dp"
+        android:background = "#d7ccc8"
+        android:textStyle = "bold" />
+
+    <GridView
+        android:id = "@+id/gridview_all_apps"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:numColumns = "4"
+        android:paddingTop = "16dp"
+        android:scrollbarAlwaysDrawVerticalTrack = "true"
+        />
+</LinearLayout>
